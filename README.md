@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/refactorian/gitea-docker/blob/main/gitea.svg" width="500"></p>
+
 # Gitea Docker
 - Gitea Latest
 - Postgres v16
