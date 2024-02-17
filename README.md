@@ -14,7 +14,7 @@
 ### Gitea App
 - URL: http://localhost:3300
 
-### Basic docker compose commands
+### Docker compose commands
 - Build or rebuild services
     - `docker compose build`
 - Create and start containers
@@ -27,6 +27,10 @@
     - `docker compose restart`
 - Run a command inside a container
     - `docker compose exec [container] [command]`
+
+# TODO
+- Improve environment 
+- Add more containers
 
 # What is Gitea?
 
