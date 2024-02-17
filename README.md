@@ -36,13 +36,7 @@ blog post to read about the justification for a fork.
 
 ## Purpose
 
-The goal of this project is to provide the easiest, fastest, and most painless way of setting
-up a self-hosted Git service.
-
-With Go, this can be done platform-independently across
-**all platforms** which Go supports, including Linux, macOS, and Windows,
-on x86, amd64, ARM and PowerPC architectures.
-You can try it out using [the online demo](https://try.gitea.io/).
+The goal of this project is to provide the easiest, fastest, and most painless way of setting up a self-hosted Git service. With Go, this can be done platform-independently across **all platforms** which Go supports, including Linux, macOS, and Windows, on x86, amd64, ARM and PowerPC architectures.
 
 ## Features
 
