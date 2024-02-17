@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+  server:
+    image: gitea/gitea:latest
+    container_name: gitea-server
+    restart: always
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+      - GITEA__database__DB_TYPE=postgres
+      - GITEA__database__HOST=db:5432
+      - GITEA__database__NAME=refactorian
+      - GITEA__database__USER=refactorian
+      - GITEA__database__PASSWD=refactorian
+    volumes:
+      - ./data/gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 3300:3000
+      - 222:22
+    depends_on:
+      - db
+    networks:
+      - default
+
+  db:
+    image: postgres:16
+    container_name: gitea-db
+    restart: always
+    environment:
+      - POSTGRES_USER=refactorian
+      - POSTGRES_PASSWORD=refactorian
+      - POSTGRES_DB=refactorian
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - default
