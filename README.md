@@ -1,8 +1,8 @@
-<p align="center"><img src="https://github.com/refactorian/gitea-docker/blob/main/gitea.svg" width="500"></p>
+<p align="center"><img src="https://about.gitea.com/gitea-text.svg" width="500"></p>
 
 # Gitea Docker
-- Gitea Latest
-- Postgres v16
+- Gitea v1.21.x
+- Postgres v16.x
 
 # Requirements
 - Stable version of [Docker](https://docs.docker.com/engine/install/)
@@ -29,10 +29,6 @@
     - `docker compose restart`
 - Run a command inside a container
     - `docker compose exec [container] [command]`
-
-# TODO
-- Improve environment 
-- Add more containers
 
 # What is Gitea?
 
